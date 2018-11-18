@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <title>Document</title>
+</head>
+<body>
+        <header class="page-header display-flex justify-content">
+
+                <div class="page-header__side logo display-flex">
+                        <i class="fas fa-bars"></i>
+                        <h1 class="page-heading">TechHub</h1>
+                </div>
+                <div class="page-header__side buttons display-flex">
+                        <button class="student-button" id="deleteStudents">სტუდენტების წაშლა</button>
+                        <button class="student-button" id="addStudent">სტუდენტის დამატება</button>
+                </div>
+
+        </header>
+
+        <main class="main">
+                <aside class="main__sidebar">
+                        <ul class="main__sidebar-list">
+                                <li class="main__sidebar-item display-flex justify-content student-counter">
+                                        <h5>სტუდენტების რაოდენობა</h5>
+                                        <span id="studentsCount"></span>
+                                </li>
+
+                                <li class="main__sidebar-item display-flex justify-content student-counter">
+                                        <h5>საშუალო ქულა</h5>
+                                        <span id="averageGrade"></span>
+                                </li>
+                        </ul>
+                </aside>
+                <section class="main__content">
+                        <section class="main__content__table-container">
+                                <table class="main__content__table" id="myTable">
+
+                                        <thead class="main__content__table-head">
+                                                <tr class="main__content__table-head-row">
+                                                        <th class="main__content__table-data">სახელი, გვარი</th>
+                                                        <th class="main__content__table-data">ორშაბათი</th>
+                                                        <th class="main__content__table-data">სამშაბათი</th>
+                                                        <th class="main__content__table-data">ოთხშაბათი</th>
+                                                        <th class="main__content__table-data">ხუთშაბათი</th>
+                                                        <th class="main__content__table-data">პარასკევი</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody id="tableBody">
+
+                                        </tbody>
+
+                                </table>
+                        </section>
+                </section>
+        </main>
+
+
+        <script src="js/scripts.js"></script>
+        
+</body>
+</html>
